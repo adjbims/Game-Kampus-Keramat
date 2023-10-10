@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct0sv0xs1n83h"]
+
+[ext_resource type="Texture2D" uid="uid://cx3ccv7w65vja" path="res://Asset/Object/exterior (3).png" id="1_f35p4"]
+[ext_resource type="FontFile" uid="uid://b20f8chq4udvt" path="res://Asset/Font/animeace2bb_ot/animeace2_bld.otf" id="2_cumeh"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.5, 325.5)
+scale = Vector2(0.651228, 0.629883)
+texture = ExtResource("1_f35p4")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 63.0
+offset_top = 155.0
+offset_right = 1132.0
+offset_bottom = 492.0
+rotation = -0.000781848
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_cumeh")
+theme_override_font_sizes/font_size = 30
+text = "Pada suatu hari, Nana dan Hani, dua sahabat sejati, memutuskan untuk menjalani petualangan yang tak terlupakan. Mereka berada di kampus universitas mereka yang terkenal, Kampus X, sebuah tempat yang memiliki sejarah panjang dan misterius"
+vertical_alignment = 3
+autowrap_mode = 2
