@@ -1,0 +1,101 @@
+[gd_scene load_steps=14 format=3 uid="uid://0swiqpgruboi"]
+
+[ext_resource type="Texture2D" uid="uid://20ww15c1pi3f" path="res://Asset/Chara/chara-hani.png" id="1_v0ocj"]
+[ext_resource type="Texture2D" uid="uid://cqvsq7g1gofr0" path="res://Asset/Chara/chara-nana.png" id="2_y0t2e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1m26"]
+atlas = ExtResource("1_v0ocj")
+region = Rect2(0, 297, 98, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvddf"]
+atlas = ExtResource("1_v0ocj")
+region = Rect2(98, 297, 98, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngvg1"]
+atlas = ExtResource("1_v0ocj")
+region = Rect2(196, 297, 98, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7oct"]
+atlas = ExtResource("1_v0ocj")
+region = Rect2(294, 297, 98, 99)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aqe18"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1m26")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rvddf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ngvg1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7oct")
+}],
+"loop": true,
+"name": &"left",
+"speed": 4.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ikwin"]
+radius = 17.0
+height = 82.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1382y"]
+atlas = ExtResource("2_y0t2e")
+region = Rect2(0, 297, 97, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydrvt"]
+atlas = ExtResource("2_y0t2e")
+region = Rect2(97, 297, 97, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0s6s"]
+atlas = ExtResource("2_y0t2e")
+region = Rect2(194, 297, 97, 99)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iabug"]
+atlas = ExtResource("2_y0t2e")
+region = Rect2(291, 297, 97, 99)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v2kr2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1382y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydrvt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0s6s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iabug")
+}],
+"loop": true,
+"name": &"left",
+"speed": 4.0
+}]
+
+[node name="nanahani" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(56, 60)
+sprite_frames = SubResource("SpriteFrames_aqe18")
+animation = &"left"
+frame_progress = 0.276449
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(59, 60)
+shape = SubResource("CapsuleShape2D_ikwin")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(118.5, 72.5)
+sprite_frames = SubResource("SpriteFrames_v2kr2")
+animation = &"left"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(117.5, 74.5)
+shape = SubResource("CapsuleShape2D_ikwin")
