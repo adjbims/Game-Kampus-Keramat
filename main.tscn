@@ -1,55 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://bbb1aqxculobs"]
+[gd_scene load_steps=3 format=3 uid="uid://dtt82iplu4tbf"]
 
 [ext_resource type="PackedScene" uid="uid://bn0gt0cet5en7" path="res://map.tscn" id="1_13pb2"]
-[ext_resource type="PackedScene" uid="uid://bquey3pxd63l5" path="res://setan.tscn" id="2_0f3ov"]
-[ext_resource type="PackedScene" uid="uid://qyykmt7nccm8" path="res://nana.tscn" id="3_ce216"]
-[ext_resource type="PackedScene" uid="uid://0swiqpgruboi" path="res://nanahani.tscn" id="4_4nh5d"]
+[ext_resource type="PackedScene" uid="uid://qyykmt7nccm8" path="res://player2.tscn" id="3_ce216"]
 
-[node name="main" type="Node2D"]
+[node name="Main" type="Node2D"]
 
 [node name="map" parent="." instance=ExtResource("1_13pb2")]
 
-[node name="setan" parent="." instance=ExtResource("2_0f3ov")]
-position = Vector2(519, 355)
+[node name="player2" parent="." instance=ExtResource("3_ce216")]
+position = Vector2(571, 506)
 
-[node name="setan2" parent="." instance=ExtResource("2_0f3ov")]
-position = Vector2(501, -796)
-
-[node name="nana" parent="." instance=ExtResource("3_ce216")]
-position = Vector2(549, 497)
-
-[node name="Panel" type="Panel" parent="."]
-offset_left = 22.0
-offset_top = -1334.0
-offset_right = 165.0
-offset_bottom = -1283.0
-
-[node name="Label" type="Label" parent="Panel"]
-layout_mode = 0
-offset_left = 12.0
-offset_top = -5.0
-offset_right = 138.0
-offset_bottom = 47.0
-text = "Time remaining: 
-07:56"
-
-[node name="Panel2" type="Panel" parent="."]
-offset_left = 969.0
-offset_top = -1344.0
-offset_right = 1104.0
-offset_bottom = -1293.0
-
-[node name="Label" type="Label" parent="Panel2"]
-layout_mode = 0
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 119.0
-offset_bottom = 56.0
-text = "key remaining: 
-0/3"
-
-[node name="nanahani" parent="." instance=ExtResource("4_4nh5d")]
-position = Vector2(606, -849)
-
-[node name="Camera2D" type="Camera2D" parent="nanahani"]
-position = Vector2(-44, -191)
+[node name="Camera2D" type="Camera2D" parent="player2"]
+position = Vector2(17, -172)
