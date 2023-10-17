@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://bn0gt0cet5en7"]
+[gd_scene load_steps=68 format=3 uid="uid://bn0gt0cet5en7"]
 
 [ext_resource type="Texture2D" uid="uid://cljqn8ox84nte" path="res://Asset/Map/mapmain.png" id="1_0vnks"]
 [ext_resource type="Texture2D" uid="uid://bmjk2aq8i4kut" path="res://Asset/Map/bsg_city_gate_smaple_01.jpg" id="2_51fc4"]
@@ -17605,13 +17605,22 @@ sources/29 = SubResource("TileSetAtlasSource_qq2f8")
 sources/30 = SubResource("TileSetAtlasSource_1ww3x")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6reav"]
-size = Vector2(1677.5, 275)
+size = Vector2(1677.5, 269)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_43g2n"]
 size = Vector2(394, 2601.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wxpo4"]
 size = Vector2(844.5, 263)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6n0ht"]
+size = Vector2(818.25, 220.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d0xyj"]
+size = Vector2(75, 220.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hcqfg"]
+size = Vector2(93, 489.125)
 
 [node name="map" type="Node2D"]
 
@@ -17623,11 +17632,11 @@ layer_0/tile_data = PackedInt32Array(2686975, 1114112, 15, 2621440, 720896, 15, 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-294.25, 507.5)
+position = Vector2(-294.25, 510.5)
 shape = SubResource("RectangleShape2D_6reav")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1477, 508)
+position = Vector2(1456, 498)
 shape = SubResource("RectangleShape2D_6reav")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
@@ -17647,5 +17656,25 @@ position = Vector2(594.75, -605.5)
 shape = SubResource("RectangleShape2D_wxpo4")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(596, 124)
-shape = SubResource("RectangleShape2D_wxpo4")
+position = Vector2(593, 114.25)
+shape = SubResource("RectangleShape2D_6n0ht")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(221, -60)
+shape = SubResource("RectangleShape2D_d0xyj")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(48.5, 78.875)
+shape = SubResource("RectangleShape2D_hcqfg")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1143, 66)
+shape = SubResource("RectangleShape2D_hcqfg")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(50, -498)
+shape = SubResource("RectangleShape2D_hcqfg")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1138, -498)
+shape = SubResource("RectangleShape2D_hcqfg")
