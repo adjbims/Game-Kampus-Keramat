@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://boypuxjuo6eu7"]
+[gd_scene load_steps=9 format=3 uid="uid://boypuxjuo6eu7"]
 
 [ext_resource type="Texture2D" uid="uid://llm5sqc3744c" path="res://Asset/hallway (4).png" id="1_6brvd"]
 [ext_resource type="Script" path="res://dialog2.gd" id="1_o8wbo"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://du6oad5v6usbr" path="res://Asset/Object/kanan.png" id="4_ka0dd"]
 [ext_resource type="FontFile" uid="uid://448karyyn877" path="res://Asset/Font/PixelGameFont.ttf" id="5_hfvov"]
 [ext_resource type="FontFile" uid="uid://dfyg6bq4nwdkf" path="res://Asset/HelpMe.otf" id="6_v5pvd"]
+[ext_resource type="AudioStream" uid="uid://c26ypsex11567" path="res://Asset/scary-spooky-creepy-horror-ambient-dark-piano-cinematic-115052.mp3" id="8_e56ih"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_o8wbo")
@@ -72,5 +73,9 @@ offset_bottom = 623.0
 theme_override_fonts/font = ExtResource("6_v5pvd")
 theme_override_font_sizes/font_size = 30
 text = "next"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_e56ih")
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
