@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=105 format=3 uid="uid://bn0gt0cet5en7"]
+=======
+[gd_scene load_steps=68 format=3 uid="uid://bn0gt0cet5en7"]
+>>>>>>> 74fec8d8909c7ea9730c789b9a319592d659cf8a
 
 [ext_resource type="Texture2D" uid="uid://cljqn8ox84nte" path="res://Asset/Map/mapmain.png" id="1_0vnks"]
 [ext_resource type="Texture2D" uid="uid://bmjk2aq8i4kut" path="res://Asset/Map/bsg_city_gate_smaple_01.jpg" id="2_51fc4"]
@@ -17607,6 +17611,7 @@ sources/30 = SubResource("TileSetAtlasSource_1ww3x")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6reav"]
 size = Vector2(1677.5, 269)
 
+<<<<<<< HEAD
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v43mn"]
 size = Vector2(1614.75, 269)
 
@@ -17618,10 +17623,15 @@ size = Vector2(3396, 335.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_43g2n"]
 size = Vector2(357, 2601.5)
+=======
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43g2n"]
+size = Vector2(394, 2601.5)
+>>>>>>> 74fec8d8909c7ea9730c789b9a319592d659cf8a
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wxpo4"]
 size = Vector2(844.5, 263)
 
+<<<<<<< HEAD
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qkjhv"]
 size = Vector2(92.8125, 103.5)
 
@@ -17724,6 +17734,8 @@ size = Vector2(79.4063, 96.9688)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1l0fg"]
 size = Vector2(79.4063, 96.9688)
 
+=======
+>>>>>>> 74fec8d8909c7ea9730c789b9a319592d659cf8a
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6n0ht"]
 size = Vector2(818.25, 220.5)
 
@@ -17734,7 +17746,10 @@ size = Vector2(75, 220.5)
 size = Vector2(93, 489.125)
 
 [node name="map" type="Node2D"]
+<<<<<<< HEAD
 metadata/_edit_vertical_guides_ = []
+=======
+>>>>>>> 74fec8d8909c7ea9730c789b9a319592d659cf8a
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_2l0gc")
@@ -17744,6 +17759,7 @@ layer_0/tile_data = PackedInt32Array(2686975, 1114112, 15, 2621440, 720896, 15, 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+<<<<<<< HEAD
 position = Vector2(-299, 511)
 shape = SubResource("RectangleShape2D_6reav")
 
@@ -17761,12 +17777,32 @@ shape = SubResource("RectangleShape2D_12hew")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(2074.5, -962)
+=======
+position = Vector2(-294.25, 510.5)
+shape = SubResource("RectangleShape2D_6reav")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1485, 501)
+shape = SubResource("RectangleShape2D_6reav")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(586, 789)
+shape = SubResource("RectangleShape2D_6reav")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-942, -933.25)
+shape = SubResource("RectangleShape2D_43g2n")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2093, -962)
+>>>>>>> 74fec8d8909c7ea9730c789b9a319592d659cf8a
 shape = SubResource("RectangleShape2D_43g2n")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(594.75, -605.5)
 shape = SubResource("RectangleShape2D_wxpo4")
 
+<<<<<<< HEAD
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D/CollisionShape2D6"]
 position = Vector2(-114.75, -322.5)
 shape = SubResource("RectangleShape2D_qkjhv")
@@ -17923,6 +17959,8 @@ shape = SubResource("RectangleShape2D_nyj28")
 position = Vector2(-289, -2)
 shape = SubResource("RectangleShape2D_1l0fg")
 
+=======
+>>>>>>> 74fec8d8909c7ea9730c789b9a319592d659cf8a
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(593, 114.25)
 shape = SubResource("RectangleShape2D_6n0ht")

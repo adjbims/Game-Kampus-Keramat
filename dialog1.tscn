@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=8 format=3 uid="uid://bt0jpy6xmayr0"]
+=======
+[gd_scene load_steps=9 format=3 uid="uid://bt0jpy6xmayr0"]
+>>>>>>> 74fec8d8909c7ea9730c789b9a319592d659cf8a
 
 [ext_resource type="Texture2D" uid="uid://llm5sqc3744c" path="res://Asset/hallway (4).png" id="1_m1nyr"]
 [ext_resource type="Script" path="res://dialog1.gd" id="1_trvqp"]
@@ -7,6 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://bf3nym10ksyev" path="res://Asset/159825-vector-bubble-chat-free-png-hq.png" id="4_0nlkg"]
 [ext_resource type="FontFile" uid="uid://448karyyn877" path="res://Asset/Font/PixelGameFont.ttf" id="5_kjha1"]
 [ext_resource type="FontFile" uid="uid://dfyg6bq4nwdkf" path="res://Asset/HelpMe.otf" id="6_uumdj"]
+<<<<<<< HEAD
+=======
+[ext_resource type="AudioStream" uid="uid://c26ypsex11567" path="res://Asset/scary-spooky-creepy-horror-ambient-dark-piano-cinematic-115052.mp3" id="8_tknig"]
+>>>>>>> 74fec8d8909c7ea9730c789b9a319592d659cf8a
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_trvqp")
@@ -75,4 +83,11 @@ theme_override_font_sizes/font_size = 30
 text = "next"
 metadata/_edit_use_anchors_ = true
 
+<<<<<<< HEAD
+=======
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_tknig")
+autoplay = true
+
+>>>>>>> 74fec8d8909c7ea9730c789b9a319592d659cf8a
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
